@@ -1,0 +1,106 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FDFBF8;
+    color: #4A3F35;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.brand-brown { 
+    color: #6F4E37; 
+}
+
+.brand-green { 
+    color: #2E7D32; 
+}
+
+.brand-bg-light { 
+    background-color: #F5F1E9; 
+}
+
+.brand-bg-dark { 
+    background-color: #6F4E37; 
+}
+
+.brand-border { 
+    border-color: #D2C4B3; 
+}
+
+.hero-bg {
+    background-image: url('https://placehold.co/1200x800/6F4E37/FFFFFF?text=Planta%C3%A7%C3%A3o+de+Caf%C3%A9');
+    background-size: cover;
+    background-position: center;
+}
+
+.progress-bar-fill {
+    transition: width 0.5s ease-in-out;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#main-header {
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#main-header.header-scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    transform: translateY(20px);
+    z-index: 100;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#back-to-top:hover {
+    background-color: #5a3f2b;
+}
+
+@keyframes message-fade-in {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.animate-message-in {
+    animation: message-fade-in 0.5s ease-out;
+
+}
