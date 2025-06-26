@@ -40,13 +40,13 @@ Para ver as páginas em seu navegador, siga estes passos:
 
 1.  Clone este repositório para a sua máquina local:
     ```bash
-    git clone [https://github.com/editardps](https://editardps)
+    git clone [[https://github.com/editardps](https://github.com/ssalomaolais/minha-origem-jde.git)]([https://editardps](https://github.com/ssalomaolais/minha-origem-jde.git))
     ```
 2.  Navegue até a pasta do projeto desejado:
     ```bash
-    cd nome-do-repositorio/apresentacao
+    cd minha-origem-jde/apresentacao
     # ou
-    cd nome-do-repositorio/prototipo-consumidor
+    cd minha-origem-jde/prototipo-consumidor
     ```
 3.  Abra o arquivo `index.html` no seu navegador de preferência.
 
